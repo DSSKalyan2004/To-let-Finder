@@ -1,7 +1,8 @@
-// Import the functions you need from the SDKs you need
+// Firebase Configuration and Initialization
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getAuth, Auth } from "firebase/auth";
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBK_Bo77ZCW0Io7kgIZIbshVcrVAK070BA",
   authDomain: "tolet-finder-57688.firebaseapp.com",
@@ -13,5 +14,9 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const app = initializeApp(firebaseConfig);
+
+// Initialize Firebase Authentication and get a reference to the service
+export const auth: Auth = getAuth(app);
+
+export default app;

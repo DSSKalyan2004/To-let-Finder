@@ -1,7 +1,5 @@
 import { createContext } from 'react';
 import { User, UserType } from '../types';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { app } from '../firebase';
 
 interface AuthContextType {
   currentUser: User | null;
@@ -16,8 +14,7 @@ export const AuthContext = createContext<AuthContextType>({
   currentUser: null,
   loading: true,
   login: async () => { },
-  register:async () => {
-  },
+  register: async () => { },
   logout: async () => { },
   changePassword: async () => { },
 });
