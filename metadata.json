@@ -1,0 +1,14 @@
+{
+  "name": "To-Let Finder",
+  "description": "A modern web application to help users find rental houses and allow house owners to list their properties. Features include location-based search, property details, and an integrated map view.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  }
+}
